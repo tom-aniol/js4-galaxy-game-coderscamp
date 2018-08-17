@@ -7,10 +7,8 @@ html, body {
 }
 
 #container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-
+  flex-direction: column;
 }
 
 #scoretimerarea {
@@ -18,22 +16,30 @@ html, body {
   justify-content: space-around;
   width: 100vw;
   height: 10vh;
-  text-align: center;
+  align-items: center;
   background-color: rgb(55, 148, 55);
+  border-bottom: 2px solid rgb(2, 80, 2);
 }
 
 #score {
-  justify-content: center;
-  margin-top: 25px;
+
 }
 
 #timer {
-  justify-content: center;
-  margin-top: 25px;
+
+}
+
+#star {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+
 }
 
 #gamearea {
   background-color: darkgreen;
   width: 100vw;
   height: 90vh;
+  padding: 5px;
 }
