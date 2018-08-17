@@ -1,13 +1,14 @@
 
-class Star {
+class Galaxy {
   constructor() {
     var newStar = document.createElement("div");
-    newStar.innerHTML = "<h5>1</h5>";
+    newStar.textContent = 'Czesc';
 
-    var star = document.querySelector('#star');
+    var star = document.querySelector('star');
+    document.body.insertBefore(newStar,star);
 
     console.log ("Dziala")
   }
 }
 
-export default Star;
+export default Galaxy;

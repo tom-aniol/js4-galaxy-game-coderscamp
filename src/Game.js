@@ -1,10 +1,9 @@
-import Game from './Galaxy';
+import Galaxy from './Galaxy';
 
 class Game {
   constructor() {
-    this.gamearea = document.querySelector('#gamearea');
-    this.star = new Star();
-
+    this.gamearea = document.querySelector('gamearea');
+    this.star = new Galaxy();
   }
 }
 
