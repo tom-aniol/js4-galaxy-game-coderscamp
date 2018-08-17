@@ -1,5 +1,5 @@
 
-class Galaxy {
+class Star {
   constructor() {
     var newStar = document.createElement("div");
     newStar.textContent = 'Czesc';
@@ -11,4 +11,4 @@ class Galaxy {
   }
 }
 
-export default Galaxy;
+export default Star;

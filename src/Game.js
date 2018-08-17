@@ -1,11 +1,17 @@
-import Galaxy from './Galaxy';
+import Star from './Galaxy';
 
 class Game {
   constructor() {
-    this.gamearea = document.querySelector('gamearea');
-    this.star = new Galaxy();
+    // przypisuje klasie uchwyty do obszarow gry
+    this.scoretimerarea = document.querySelector('#scoretimerarea');
+    this.gamearea = document.querySelector('#gamearea');
+    //tutaj bedzie sie tworzyl obiekt Star
+    this.star = new Star();
   }
 }
 
+start = () => {
+  console.log('Game started');
+}
 
 export default Game;
