@@ -10,8 +10,8 @@ class Game {
     this.scoretimerarea = document.querySelector('#scoretimerarea');
     this.gamearea = document.querySelector('#gamearea');
 
-    var newStar = new Galaxy();
-    console.log(newStar);
+    this.star = new Galaxy();
+
   }
 
   start = () => {
