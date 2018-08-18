@@ -9,9 +9,9 @@ class Game {
     // przypisuje klasie uchwyty do obszarow gry
     this.scoretimerarea = document.querySelector('#scoretimerarea');
     this.gamearea = document.querySelector('#gamearea');
-    this.star = new Galaxy();
-    gamearea.appendChild(star);
 
+    var newStar = new Galaxy();
+    console.log(newStar);
   }
 
   start = () => {
