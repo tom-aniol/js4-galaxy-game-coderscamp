@@ -9,8 +9,9 @@ class Game {
     // przypisuje klasie uchwyty do obszarow gry
     this.scoretimerarea = document.querySelector('#scoretimerarea');
     this.gamearea = document.querySelector('#gamearea');
-    //tutaj bedzie sie tworzyl obiekt Star
-    this.star = new Star();
+    this.star = new Galaxy();
+    gamearea.appendChild(star);
+
   }
 
   start = () => {
@@ -18,7 +19,6 @@ class Game {
   }
 
 }//(poprawione) /Sasza
-// tutaj jest klamra zamykająca klase /PR
-// wszystkie metody powinny być w środku klasy, inaczej nie będzie działać /PR
+// tu jest klamra zamykająca klase, wszystkie metody powinny być w środku klasy, inaczej nie będzie działać /PR
 
 export default Game;
