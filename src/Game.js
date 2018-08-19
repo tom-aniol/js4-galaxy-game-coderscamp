@@ -9,13 +9,17 @@ class Game {
     // przypisuje klasie uchwyty do obszarow gry
     this.scoretimerarea = document.querySelector('#scoretimerarea');
     this.gamearea = document.querySelector('#gamearea');
-
-    this.star = new Galaxy();
-
+    this.star = new Galaxy(5);
   }
 
   start = () => {
     console.log('Game started');
+  }
+
+  NewGame() {
+    if (this.currentStarIndex > this.index) {
+      console.log ('Game over');
+    }
   }
 
 }//(poprawione) /Sasza
