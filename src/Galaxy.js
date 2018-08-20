@@ -47,7 +47,7 @@ class Galaxy {
     for (let i = 0; i < this.starCount; i++) {
       let newStar = new Star(i)
       newStar.star.addEventListener('mouseover', (e) => this.hover(e.target))
-      newStar.create()
+      newStar.create(i)
     }
   }
 

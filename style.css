@@ -36,6 +36,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all ease-in 250ms;
+}
+
+.appear {
+  transform: scale(0);
+  transition: all ease-in 250ms;
 }
 
 #gamearea {
