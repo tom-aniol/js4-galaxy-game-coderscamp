@@ -19,7 +19,7 @@ body {
   width: 100vw;
   height: 10vh;
   align-items: center;
-  background-color: rgb(55, 148, 55);
+  background-color: rgb(131, 245, 175);
   /* bord er-bottom: 2px solid rgb(2, 80, 2); */
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .star {
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   position: absolute;
   display: flex;
@@ -45,7 +45,7 @@ body {
 }
 
 #gamearea {
-  background-color: darkgreen;
+  background-color: rgb(54, 54, 54);
   width: 100vw;
   height: 90vh;
   padding: 0;
