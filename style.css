@@ -23,12 +23,6 @@ body {
   /* bord er-bottom: 2px solid rgb(2, 80, 2); */
 }
 
-#score {
-}
-
-#timer {
-}
-
 .star {
   background-color: rgb(255, 255, 255);
   border-radius: 50%;

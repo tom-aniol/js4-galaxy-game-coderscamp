@@ -2,6 +2,7 @@
 
 import Star from './Star'
 import Score from './Score'
+import Timer from './Timer'
 
 
 class Galaxy {
@@ -9,7 +10,9 @@ class Galaxy {
     this.starCount = starCount
     this.gameArea = document.querySelector('#gamearea')
     this.order = 1
+    this.seconds = 0
     this.score = new Score()
+    this.time = new Timer()
   }
 
 
@@ -18,12 +21,11 @@ class Galaxy {
       this.gameArea.innerHTML = ''
       this.order = 1
       this.score.addPoints()
-
+      this.time.resetTimer()
       setTimeout(()=> {
         this.createSpace();
       }, 300)
       return
-
     }
 
     if (this.order == star.innerText) {
@@ -33,13 +35,13 @@ class Galaxy {
     } else {
       this.gameArea.innerHTML = ''
       this.score.resetPoints()
+      this.time.resetTimer()
       setTimeout(() => {
         this.createSpace();
       }, 300)
+
       this.order = 1
     }
-
-
   }
 
 
@@ -49,8 +51,8 @@ class Galaxy {
       newStar.star.addEventListener('mouseover', (e) => this.hover(e.target))
       newStar.create(i)
     }
+    this.time.timerOn()
   }
-
 
 }
 
